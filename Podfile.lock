@@ -1,0 +1,16 @@
+PODS:
+  - REPagedScrollView (1.0)
+
+DEPENDENCIES:
+  - REPagedScrollView (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - REPagedScrollView
+
+SPEC CHECKSUMS:
+  REPagedScrollView: 05dec2f85b68a9f99d216bce250f2eb37aed0b15
+
+PODFILE CHECKSUM: b5c350b5e30c29bb169a977bf6b7624baacc3a8a
+
+COCOAPODS: 1.5.3
