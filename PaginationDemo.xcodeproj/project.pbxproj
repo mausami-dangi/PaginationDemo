@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6439DA79DE9D13EF251B16BF /* libPods-PaginationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76F39844D41AD6737DADE91 /* libPods-PaginationDemo.a */; };
 		BC523C64220210380052B1AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC523C63220210380052B1AC /* AppDelegate.m */; };
 		BC523C67220210390052B1AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC523C66220210390052B1AC /* ViewController.m */; };
 		BC523C6A220210390052B1AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC523C68220210390052B1AC /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12436D5EA430A406472845E2 /* Pods-PaginationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaginationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaginationDemo/Pods-PaginationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC523C5F220210380052B1AC /* PaginationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaginationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC523C62220210380052B1AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC523C63220210380052B1AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		BC523C6E2202103A0052B1AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC523C702202103A0052B1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC523C712202103A0052B1AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5E4C54ED5C56183EB44C93E /* Pods-PaginationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaginationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaginationDemo/Pods-PaginationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F76F39844D41AD6737DADE91 /* libPods-PaginationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PaginationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6439DA79DE9D13EF251B16BF /* libPods-PaginationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		569A54520DBF66ACA30C04D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12436D5EA430A406472845E2 /* Pods-PaginationDemo.debug.xcconfig */,
+				E5E4C54ED5C56183EB44C93E /* Pods-PaginationDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0319E9C736C120A7EFBD343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F76F39844D41AD6737DADE91 /* libPods-PaginationDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC523C56220210380052B1AC = {
 			isa = PBXGroup;
 			children = (
 				BC523C61220210380052B1AC /* PaginationDemo */,
 				BC523C60220210380052B1AC /* Products */,
+				569A54520DBF66ACA30C04D5 /* Pods */,
+				A0319E9C736C120A7EFBD343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC523C752202103A0052B1AC /* Build configuration list for PBXNativeTarget "PaginationDemo" */;
 			buildPhases = (
+				782027EDA903EE74C60B998E /* [CP] Check Pods Manifest.lock */,
 				BC523C5B220210380052B1AC /* Sources */,
 				BC523C5C220210380052B1AC /* Frameworks */,
 				BC523C5D220210380052B1AC /* Resources */,
@@ -135,6 +160,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		782027EDA903EE74C60B998E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaginationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC523C5B220210380052B1AC /* Sources */ = {
@@ -283,6 +333,7 @@
 		};
 		BC523C762202103A0052B1AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12436D5EA430A406472845E2 /* Pods-PaginationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +351,7 @@
 		};
 		BC523C772202103A0052B1AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E4C54ED5C56183EB44C93E /* Pods-PaginationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
